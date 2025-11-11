@@ -8,22 +8,61 @@
 - Using Python and one other data visualization software (Excel or free alternative, Tableau Public, any other tool you prefer), create two distinct visualizations from your dataset of choice.  
 - For each visualization, describe and justify: 
     > What software did you use to create your data visualization?
+I used Microsoft Power BI to create the visualizations. Power BI was selected because it supports fast data modeling, interactive dashboards, and clear visual encoding without requiring complex programming. It also integrates easily with CSV and API-extracted datasets such as the Toronto Open Data portal.
 
     > Who is your intended audience? 
-    
+ The intended audience is community organizations, and general residents of Toronto who may be interested in understanding trends in pet licensing. The dashboard is designed to be easy to read for a non-technical audience, while still allowing deeper exploration for data-savvy users.
+ 
     > What information or message are you trying to convey with your visualization? 
-    
+The main message is to communicate how pet licensing patterns have changed over time in Toronto:
+1. The donut charts show the composition of dogs vs cats in each year (2023–2025).
+2. The line chart shows the overall annual trend in licenses, highlighting a slight decline.
+3. The treemap shows the distribution of primary breeds, illustrating which breeds are most common.
+Together, these visuals provide a narrative that answers How many pets are being licensed, how does this vary by cat/dog, and what breeds are most popular?
+  
     > What aspects of design did you consider when making your visualization? How did you apply them? With what elements of your plots? 
-    
+I applied the following design principles:
+1.Color coding: I used consistent blue tones to differentiate animal types while keeping the layout visually cohesive.
+2. Minimal text clutter: Values are labeled directly on charts (e.g., 62.0K total), reducing the need to interpret axis values.
+3. Comparability: The donut charts share the same layout and scale, making year-to-year comparison intuitive.
+
     > How did you ensure that your data visualizations are reproducible? If the tool you used to make your data visualization is not reproducible, how will this impact your data visualization? 
-    
+
+The visualizations are fully reproducible because:
+
+1. The dataset comes from a public source (City of Toronto Open Data).
+2. I used Power BI, which stores the transformation steps in the data model and query editor.
+3. All calculations (e.g., counts, percentages) are based on transparent filters and DAX measures.
     > How did you ensure that your data visualization is accessible?  
-    
+I ensured accessibility by:
+1. Using high-contrast colors and avoiding unnecessary color gradients.
+2. Ensuring fonts are large and legible.
+3. Avoiding red/green combinations that conflict with common forms of color blindness.
+   
     > Who are the individuals and communities who might be impacted by your visualization?  
-    
+ I ensured accessibility by:
+Using high-contrast colors and avoiding unnecessary color gradients.
+Ensuring fonts are large and legible.
+Avoiding red/green combinations that conflict with common forms of color blindness.
+
     > How did you choose which features of your chosen dataset to include or exclude from your visualization? 
-    
+I included:
+1. Year to show change over time.
+2. Animal Type (Dog/Cat) for high-level composition.
+3. Primary Breed to highlight breed popularity.
+
+I excluded:
+1. Detailed address or postal code breakdowns (to avoid unnecessary geographic complexity).
+2. Rare breeds with extremely low counts (grouped into “Other” in conceptual explanation) to maintain visual clarity.
+
     > What ‘underwater labour’ contributed to your final data visualization product?
+The “underwater labour” includes:
+Locating and retrieving the dataset from the Toronto Open Data portal.
+Cleaning and formatting the dataset (handling missing values in FSA and breed names).
+Normalizing column names and verifying the meaning of variables.
+Testing multiple chart designs before selecting the final layout.
+Reviewing the final dashboard for readability and interpretability.
+
 
 - This assignment is intentionally open-ended - you are free to create static or dynamic data visualizations, maps, or whatever form of data visualization you think best communicates your information to your audience of choice! 
 - Total word count should not exceed **(as a maximum) 1000 words** 
